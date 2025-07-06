@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Learning Hub</title>
+  <style>
+    :root {
+      --primary: #1abc9c;
+      --secondary: #fadadd;
+      --bg: #ffffff;
+      --text: #333;
+      --card-bg: #f9f9f9;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      padding: 1.5rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    section {
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: var(--primary);
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+      border-left: 6px solid var(--primary);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: var(--primary);
+    }
+    .card a {
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--secondary);
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Learning Hub</h1>
+  <p>Your go-to place for beginner-friendly coding resources</p>
+</header>
+
+<section>
+  <h2 class="section-title">🚀 Popular Topics</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Python Basics</h3>
+      <p>Start your programming journey with Python tutorials designed for beginners.</p>
+      <a href="https://www.youtube.com/playlist?list=PLVvjrrRCBy2JSHf9bmrIYwJYz1X0h4Iyb" target="_blank">Learn Python</a>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript – everything you need to create beautiful websites.</p>
+      <a href="https://www.freecodecamp.org/learn" target="_blank">Start Building</a>
+    </div>
+    <div class="card">
+      <h3>Git & GitHub</h3>
+      <p>Learn how to use version control and host your projects online using GitHub.</p>
+      <a href="https://www.youtube.com/watch?v=RGOj5yH7evk" target="_blank">Get Started with Git</a>
+    </div>
+    <div class="card">
+      <h3>Introduction to AI</h3>
+      <p>Understand the basics of Artificial Intelligence and explore cool beginner projects.</p>
+      <a href="https://www.youtube.com/watch?v=JMUxmLyrhSk" target="_blank">Explore AI</a>
+    </div>
+    <div class="card">
+      <h3>Responsive Design</h3>
+      <p>Make your websites look great on any device using media queries and flexible layouts.</p>
+      <a href="https://web.dev/learn/design/" target="_blank">Learn Responsive Design</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; <span id="year"></span> Learning Hub by Joury
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
